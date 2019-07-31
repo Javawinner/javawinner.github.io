@@ -51,10 +51,7 @@
 </blockquote>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">user_obj=models.Author.objects.filter(name=<span class="string">'egon'</span>).first()</span><br><span class="line">print(user_obj.authordetail.phone)</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>基于对象的反向查询， 除了一对一直接表名小写就可以拿到关联对象</p>
-<p>一对多，多对多反向查询必须 表名_set.all()</p>
-</blockquote>
+<p><code>基于对象的反向查询， 除了一对一直接表名小写就可以拿到关联对象一对多，多对多反向查询必须 表名_set.all()</code></p>
 <blockquote>
 <p>查询出版社是华中师范大学出版社的书籍(一对多，反向查询，需要加_set)</p>
 </blockquote>
